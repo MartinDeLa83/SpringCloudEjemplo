@@ -1,0 +1,21 @@
+# Nombre del microservicio
+# Control del InternalResourceViewResolver:
+spring:
+  application:
+    name: FrontMS
+  mvc:
+    view:
+      prefix: /WEB-INF/vistas/
+      suffix: .jsp
+
+# Servidor de descubrimiento eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+      
+# HTTP: Puerto por donde escucha
+server: 
+  port: 2222
+
+      
