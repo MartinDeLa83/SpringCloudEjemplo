@@ -1,0 +1,11 @@
+# Configuración servicio de descubrimiento Eureka
+eureka:
+  instance:
+    hostname: localhost
+  client: 
+    registerWithEureka: false # Decimos a eureka que no se autoregistre
+    fetchRegistry: false
+
+# HTTP (Tomcat) puerto por el que escucha
+server:
+  port: 1111   
