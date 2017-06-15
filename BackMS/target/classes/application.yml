@@ -1,0 +1,14 @@
+# Nombre del microservicio
+spring:
+  application:
+    name: BackMS
+
+# Servidor de descubrimiento eureka
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:1111/eureka/
+
+# HTTP: Puerto por donde escucha
+server: 
+  port: 3333
