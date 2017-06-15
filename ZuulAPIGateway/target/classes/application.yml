@@ -1,0 +1,23 @@
+# Spring properties
+spring:
+  application:
+     name: edge-service 
+
+# Configuración Zuul
+zuul:
+  routes:
+    web:
+      path: /**
+      serviceId: FRONTMS
+      stripPrefix: false
+
+# Localización del servicio de registro
+eureka:
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+#Puerto por el que escucha
+server:
+  port: 8080
